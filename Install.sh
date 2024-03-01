@@ -3,7 +3,7 @@
 tput sgr0; clear
 
 ## Load text color settings
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/tput.sh)
+source <(wget -qO- https://raw.githubusercontent.com/chinatengjie/chinatengjie-Seedbox-Components-Old/main/Miscellaneous/tput.sh)
 
 ## Allow user to decide whether they would like to install a component or not
 function Decision {
@@ -78,7 +78,7 @@ normal_2
 ## Install Seedbox Environment
 tput sgr0; clear
 normal_1; echo "Start Installing Seedbox Environment"; warn_2
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/seedbox_installation.sh)
+source <(wget -qO- https://raw.githubusercontent.com/chinatengjie/chinatengjie-Seedbox-Components-Old/main/seedbox_installation.sh)
 Update
 Decision qBittorrent
 Decision Deluge
@@ -88,7 +88,7 @@ Decision autoremove-torrents
 ## Tweaking
 tput sgr0; clear
 normal_1; echo "Start Doing System Tweak"; warn_2
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/tweaking.sh)
+source <(wget -qO- https://raw.githubusercontent.com/chinatengjie/chinatengjie-Seedbox-Components-Old/main/tweaking.sh)
 CPU_Tweaking
 NIC_Tweaking
 Network_Other_Tweaking
@@ -100,7 +100,7 @@ Decision Tweaked_BBR
 ## Configue Boot Script
 tput sgr0; clear
 normal_1; echo "Start Configuing Boot Script"
-wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/.boot-script.sh && chmod +x .boot-script.sh
+wget https://raw.githubusercontent.com/chinatengjie/chinatengjie-Seedbox-Components-Old/main/Miscellaneous/.boot-script.sh && chmod +x .boot-script.sh
 cat << EOF > /etc/systemd/system/boot-script.service
 [Unit]
 Description=boot-script
