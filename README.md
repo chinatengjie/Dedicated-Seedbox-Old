@@ -1,5 +1,5 @@
 由于新版本强制系统更新，这个是更新前的旧版本。
-
+最新版本地址 https://github.com/jerry048/Dedicated-Seedbox
 # Seedbox Installation Script
 ### !!! 這些腳本僅可在新安裝的Debian 10/11上運行 
 ### !!! 緩存的單位由GiB更改為MiB。識用于有微調要求或者機器内存較緊張的用戶。 1GiB = 1024MiB
