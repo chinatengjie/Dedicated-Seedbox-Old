@@ -3,7 +3,7 @@
 tput sgr0; clear
 
 ## Load text color settings
-source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/tput.sh)
+source <(wget -qO- https://raw.githubusercontent.com/chinatengjie/Seedbox-Components/main/Miscellaneous/tput.sh)
 
 ## Check Root Privilege
 if [ $(id -u) -ne 0 ]; then 
@@ -19,7 +19,7 @@ if [[ $distro_codename != buster ]] && [[ $distro_codename != bullseye ]] ; then
 fi
 
 while true; do
-    source <(wget -qO- https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/tweaking.sh)
+    source <(wget -qO- https://raw.githubusercontent.com/chinatengjie/Seedbox-Components/main/tweaking.sh)
     normal_3; options=("Deluge Tuning" "Tweaked BBR Install" "System Tuning" "Configure Boot Script")
     select opt in "${options[@]}"
     do
@@ -40,7 +40,7 @@ while true; do
                 ;;
             "Configure Boot Script")
                 normal_1; echo "Start Configuing Boot Script"
-                wget https://raw.githubusercontent.com/jerry048/Seedbox-Components/main/Miscellaneous/.boot-script.sh && chmod +x .boot-script.sh
+                wget https://raw.githubusercontent.com/chinatengjie/Seedbox-Components/main/Miscellaneous/.boot-script.sh && chmod +x .boot-script.sh
                 cat << EOF > /etc/systemd/system/boot-script.service
 [Unit]
 Description=boot-script
