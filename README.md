@@ -12,6 +12,11 @@
 ### Install.sh
 `bash <(wget -qO- https://raw.githubusercontent.com/chinatengjie/Dedicated-Seedbox-Old/main/Install.sh) <用戶名稱> <用戶密碼> <緩存大小(單位:MiB)>`
 
+
+### bbrx.sh 单独安装BBRX (安装前请确认已经安装好bbr并且启用，使用 lsmod | grep bbr 查询，出现bbr进程后才可执行)
+
+bash <(wget -qO- https://raw.githubusercontent.com/chinatengjie/Dedicated-Seedbox-Old/main/bbrx.sh)
+
 ### Tuning.sh 假如你已經安裝了盒子環境 (有機會導致bug，請小心使用)
 
 `bash <(wget -qO- https://raw.githubusercontent.com/chinatengjie/Dedicated-Seedbox-Old/main/Tune.sh)`
@@ -87,3 +92,4 @@ Deluge 密碼設置 - https://github.com/amefs/quickbox-lite
 autoremove-torrents - https://github.com/jerrymakesjelly/autoremove-torrents
 
 BBR 安裝 - https://github.com/KozakaiAya/TCP_BBR
+
